@@ -1,4 +1,4 @@
-# Advice Generator App (React JS, useState + useEffect)
+# Advice Generator App (Advance Slip API, React JS - useState + useEffect)
 
 ## Desktop design
 
