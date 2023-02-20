@@ -15,3 +15,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--DARKBLUE);
+    font-family: var(--FF);
+    font-size: var(--FS);
+}
+
+.app--container{
+    margin-top: 100px;
+    max-width: 335px;
+    background-color: var(--DARKGRAYISHBLUE);
+    padding-inline: 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.quote--id{
+    color: var(--NEONGREEN);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+    padding-block: 40px;
+}
+
+.quote--text{
+    color: var(--LIGHTCYAN);
+    line-height: 2.5rem;
+}
+
+.quote--divider{
+    width: 100%;
+    height: 20px;
+    background-image: url("/src/assets/images/pattern-divider-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+button{
+    all: unset;
+    background-color: var(--NEONGREEN);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+    left: calc(50% - 35px);
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0px 0px 30px var(--NEONGREEN);
+}
+
