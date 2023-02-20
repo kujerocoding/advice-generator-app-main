@@ -1,46 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 :root{
+    --DARKBLUE: hsl(218, 23%, 16%);
+    --DARKGRAYISHBLUE: hsl(217, 19%, 24%);
     --FF: 'Manrope', sans-serif;
     --FS: 28px;
+    --GRAYISHBLUE: hsl(217, 19%, 38%);
     --LIGHTCYAN: hsl(193, 38%, 86%);
     --NEONGREEN: hsl(150, 100%, 66%);
-    --GRAYISHBLUE: hsl(217, 19%, 38%);
-    --DARKGRAYISHBLUE: hsl(217, 19%, 24%);
-    --DARKBLUE: hsl(218, 23%, 16%);
 }
 
 *, *::before, *::after{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
+    align-items: center;
     background-color: var(--DARKBLUE);
+    display: flex;
     font-family: var(--FF);
     font-size: var(--FS);
-    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .quote--container{
-    max-width: 335px;
     background-color: var(--DARKGRAYISHBLUE);
-    padding-inline: 30px;
     border-radius: 15px;
-    text-align: center;
+    max-width: 335px;
+    padding-inline: 30px;
     position: relative;
+    text-align: center;
 }
 
 .quote--id{
     color: var(--NEONGREEN);
-    text-transform: uppercase;
-    letter-spacing: .2rem;
     font-size: .7rem;
+    letter-spacing: .2rem;
     padding-block: 40px;
+    text-transform: uppercase;
 }
 
 .quote--text{
@@ -49,13 +49,13 @@ body{
 }
 
 .quote--divider{
-    width: 100%;
-    height: 20px;
     background-image: url("/src/assets/images/pattern-divider-mobile.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    height: 20px;
     margin-top: 30px;
     padding-bottom: 80px;
+    width: 100%;
 }
 
 button{
@@ -76,10 +76,10 @@ button:hover{
     }
 
 .attribution{
+    color: var(--GRAYISHBLUE);
     font-size: .6rem;
     margin-block: 60px;
     text-align: center;
-    color: var(--GRAYISHBLUE);
 }
 
 .attribution > a{
